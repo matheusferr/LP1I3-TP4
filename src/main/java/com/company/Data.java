@@ -111,7 +111,7 @@ public class Data {
     public void apresentaDataAtual() {
         LocalDate date = LocalDate.of(this.ano, this.mes, this.dia);
 
-        System.out.println(date.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL)));
+        System.out.println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)));
     }
 
     public Data(int dia, int mes, int ano) {
